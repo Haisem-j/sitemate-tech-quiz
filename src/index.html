@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Sitemate Coding Challenge</title>
+    <title>First Challenge</title>
 </head>
+
 <body>
-    <h1>Initial Setup</h1>
+    <!-- Button initially shown -->
+    <button id="button" class="btn">Click Here</button>
+    
+    <!-- Container for the modal, this is automatically hidden -->
+    <modal id="modal">
+        <div class="modalContent">
+            <h4>Are you sure you want to continue?</h4>
+            <div class="modalBTNContainers">
+                <button class="btn btn-primary" id="modalYes">Yes</button>
+                <button class="btn btn-negative" id="modalCancel">Cancel</button>
+            </div>
+        </div>
+    </modal>
+    <!-- The content that will be displayed according to what the user chooses when the modal opens  -->
+    <div class="modalOutcome" id="modalOutcome"></div>
+
     <script src="./app.js"></script>
 </body>
+
 </html>

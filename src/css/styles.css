@@ -1,5 +1,57 @@
+/* Global reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    background-color: #f4f4f4;
+}
+
+/* Style for all buttons for consistency */
+.btn{
+    padding: 10px 20px;
+    border: solid black 0.5px;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.btn-primary{
+    background-color: #a0ff60;
+}
+.btn-negative{   
+    background-color: #da2f2f;
+}
+
+/* Modal styling */
+#modal{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.modalBTNContainers{
+    margin-top: 10px;
+}
+
+.modalContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 750px;
+    /* border: solid black 0.5px; */
+    background-color: #ffffff;
+}
+
+#modalOutcome{
+    display: none;
 }
