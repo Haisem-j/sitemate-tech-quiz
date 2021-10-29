@@ -11,15 +11,21 @@
 
 <body>
     <!-- Button initially shown -->
-    <button id="button" class="btn">Click Here</button>
-    
+    <button id="button" class="btn" onclick="modalTrigger()">
+        Click Here
+    </button>
+
     <!-- Container for the modal, this is automatically hidden -->
     <modal id="modal">
         <div class="modalContent">
             <h4>Are you sure you want to continue?</h4>
             <div class="modalBTNContainers">
-                <button class="btn btn-primary" id="modalYes">Yes</button>
-                <button class="btn btn-negative" id="modalCancel">Cancel</button>
+                <button class="btn btn-primary" id="modalYes" value="You just clicked 'Yes'!" onclick="userAlert(this.value)">
+                    Yes
+                </button>
+                <button class="btn btn-negative" id="modalCancel" value="You just clicked 'Cancel'!" onclick="userAlert(this.value)">
+                    Cancel
+                </button>
             </div>
         </div>
     </modal>
